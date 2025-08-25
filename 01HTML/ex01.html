@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <table>
+            <label for="name">고객명 : </label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <br>
+            <label for="phone">전화번호 : </label>
+            <input type="text" name="phone" id="phone" required
+            pattern="\d{3}-\d{4}-\d{4}">
+            <br>
+            <br>
+            <label for="email">E-mail : </label>
+            <input type="email" name="email" id="email">
+            <br>
+            <br>
+            <label for="pizza">피자선택 : </label>
+            <select>
+                <option>
+                    피자를 선택해주세요
+                </option>
+                <option>
+                    페퍼로니 피자
+                </option>
+                <option>
+                    불고기 피자
+                </option>
+            </select>
+            <fieldset>
+                <legend>피자 사이즈</legend>
+                    <input type="radio" name="size"> Small
+                    <br>
+                    <br>
+                    <input type="radio" name="size"> Medium
+                    <br>
+                    <br>
+                    <input type="radio" name="size"> Large  
+            </fieldset>
+            <fieldset>
+                <legend>토핑</legend>
+                    <input type="checkbox" name="top"> 베이컨
+                    <br>
+                    <br>
+                    <input type="checkbox" name="top"> 치즈
+                    <br>
+                    <br>
+                    <input type="checkbox" name="top"> 양파
+                    <br>
+                    <br>
+                    <input type="checkbox" name="top"> 버섯  
+            </fieldset>
+            <br>
+            희망배송시간 : <input type="time">
+            <br>
+            <br>
+            <br>
+            <label for="request">배송시 요청사항 : </label>
+            <textarea name="request" id="request"></textarea>
+            <br>
+        </table>
+    </form>
+</body>
+</html>

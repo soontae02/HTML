@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {background-color: yellowgreen; padding: 10px;}
+        .box .item {background-color: mediumspringgreen; margin:10px; height: 50px;}
+
+        .container {
+            display: flex;
+            height: 300px;
+        }
+
+        .item {
+            /* 기본 너비 - width로 대체가 가능함 */
+            flex-basis: 100px;
+        }
+
+        .item1 {
+            flex-grow: 0; /* 변화없음 */
+            flex-shrink: 1; /* 줄어들 수 있음 */
+            
+            order: 2; /* 작은 수일 수록 앞에 배치 */
+            align-self: center;
+        }
+
+        .item2 {
+            flex-grow: 1; /* 남는 공간차지 */
+            flex-shrink: 1;
+            align-self: flex-end;
+            
+            order: 3;
+        }
+
+        .item3 {
+            flex-grow: 2; /* 남는 공간차지 2배 */
+            flex-shrink: 0;
+            
+            order: -1;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="container box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+
+</body>
+</html>

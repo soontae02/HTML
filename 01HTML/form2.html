@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>폼에서 활용하는 다양한 속성</h3>
+    <!-- 이런 속성이나 태그들은 검색을 통해서 확인하는게 좋습니다 -->
+
+    <form action="###">
+        <fieldset>
+            <legend>입력양식에 힌트를 줄 때 사용</legend>
+            <!-- 중첩도 가능 -->
+            <!-- <fieldset>
+                <legend>123</legend>
+            </fieldset> -->
+
+            <!-- label은 input과 연결되서 웹 접근성 향상을 위해 사용될 수 있음 -->
+            <!-- required는 값을 필수로 지정하는 속성입니다 -->
+            <!-- pattern은 정규표현식 문법을 사용해서, 특정 값만 입력받게함. -->
+            <!-- title은 pattern과 함께 사용되고, 형식에 실패했을 때 부가적인 설명을 적습니다 -->
+            <!-- checked는 미리 체크하는 속성 입니다. -->
+            <label for="a">아이디</label>
+            <input type="text" id="a" placeholder="힌트" required>
+
+            <br>
+            <label for="b">전화번호</label>
+            <input type="text" id="b" pattern="\d{3}-\d{4}-\d{4}"
+                title="휴대전화는 010-0000-0000 형식이어야 합니다" required>
+            
+            <br>
+            <label for="c">동의하세요!</label>
+            <input type="checkbox" id="c" required checked>
+            
+            <br>
+            <input type="submit" value="보내기">
+        </fieldset>
+    </form>
+
+</body>
+</html>

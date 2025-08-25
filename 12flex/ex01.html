@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {background-color: yellowgreen; padding: 10px;}
+        .box .item {background-color: mediumspringgreen; width: 50px; height: 50px; margin:10px;}
+
+        .container {
+            display: inline-flex;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h3>flex va inline-flex</h3>
+
+    <div class="container box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+    <div class="container box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+    <hr>
+
+    <style>
+        .container2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    </style>
+
+    <h3>flex direction (아이템 주축 설정)</h3>
+    <div class="container2 box">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+
+    <hr>
+
+    <style>
+        .container3 {
+            display: flex;
+            flex-wrap: wrap-reverse; /* 기본값 nowrap */
+            flex-flow: row-reverse wrap; /* 다이렉션과 랩을 한번에 적는 속성 */
+        }
+    </style>
+
+    <h3>flex wrap (줄바꿈 여부)</h3>
+
+    <div class="container3 box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+</body>
+</html>

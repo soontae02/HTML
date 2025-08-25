@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {background-color: yellowgreen; padding: 10px;}
+        .box .item {background-color: mediumspringgreen; width: 50px; height: 50px; margin:10px;}
+
+        .container {
+            display: flex;
+            /*
+            direction에 따라서 justify content는 정렬축이 바뀜
+            flex-direction: column;
+            height: 300px; 
+            */
+            
+            flex-direction: row;
+            justify-content: flex-start; /* 기본값 */
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between; /* 양끝에 붙이고 나머지 균등분배 */
+            justify-content: space-around; /* 아이템을 균등분배 */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h3>justify content (주축 정렬 - 혹은 direction에 의해 결정됨)</h3>
+
+    <div class="container box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+    <hr>
+
+    <h3>align-items (반대축 정렬 - 한줄정렬)</h3>
+    
+    <style>
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            height: 200px; /* 높이 지정 */
+            flex-wrap: wrap; /* 줄바꿈 */
+            
+            align-items: stretch;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: baseline;
+        }
+    </style>
+
+    <div class="container2 box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+    <hr>
+
+    <style
+    >
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            height: 200px;
+
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;
+            align-content: space-around;
+
+        }
+
+    </style>
+
+    <h3>align-content(반대측 정렬 - 여러줄에 대한)</h3>
+    <div class="container3 box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+
+
+
+
+</body>
+</html>

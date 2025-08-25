@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul, li, ol, dd, dl {
+    list-style: none;
+}
+
+
+/* ===== header ===== */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+header > h1 {
+    margin: 20px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.icon {
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+.login {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.icon li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('images/social.png');
+    background-size: 128px 32px;
+}
+
+.icon li.face { background-position:   0   0; }
+.icon li.twit { background-position: -32px 0; }
+.icon li.blog { background-position: -64px 0; }
+.icon li.inst { background-position: -96px 0; }
+
+.login {
+    float: right;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.login-menu > li {
+    float: left;
+}
+
+.login-menu > li > a {
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.menu {
+    text-align: center;
+}
+
+.menu > ul > li {
+    display: inline-block;
+}
+
+.menu > ul > li > a {
+    display: block;
+    color: #555;
+    font-size: 15px; 
+    padding: 30px 20px;
+    text-decoration: none;  
+}
+
+.menu > ul > li > a:hover {
+    background-color: gray;
+}
+
+/* ===== article ===== */
+#article {
+    height: 500px;
+    border-top: 3px solid red;
+    background-image: url(images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 190px;
+}
+
+#article > h3 {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#article > p {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#section > h3 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    border-bottom: 3px dashed #060404;
+}
+
+#section > .box {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#section > .box > .inner {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+
+/* ===== footer ===== */
+#footer {
+    overflow: hidden;
+    padding: 10px;
+    border-top: 3px solid #e3e3e3;
+    margin-top: 50px;
+}
+
+#footer > .left {
+    float: left;
+}
+
+#footer > .right {
+    float: right;
+}

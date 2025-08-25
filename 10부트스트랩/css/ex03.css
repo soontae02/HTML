@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 디자인 바꾸는법 */
+
+/* 1. 동일한 선택자를 이용해서 디자인 덮음() */
+/* 
+    .navbar-brand {
+    padding: 10px 20px;
+} 
+*/
+
+/* 2. 사용자 정의 클래스를 만들어서 추가 */
+.form-control {
+    border-radius: 0;
+}
+
+.form-control:focus {
+    border-color: #ccc;
+    box-shadow: none;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.my-navbar {
+    padding: 10px 20px;
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-inverse {
+    background-color: #263238;
+    border-color: #263228;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #304067;
+    color: #fff;
+}
+
+/* ===== 캐러셀 디자인 ===== */
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+/* ===== 블로그 컨텐츠 ===== */
+.blog-style {
+    margin-bottom: 10px;
+}
+
+.blog-inner {
+    border: 1px solid #e3e3e3;
+    position: relative;
+}
+
+.blog-content {
+    padding: 10px;
+}
+
+.blog-content > p {
+    font-weight: 700;
+    font-size: 13px;
+    height: 100px;
+}
+
+.blog-price {
+    overflow: hidden;
+}
+
+.blog-price > ul{
+    float: left;
+    overflow: hidden;
+}
+
+.blog-price > ul > li {
+    float: left;
+}
+
+.blog-price > ul > li > i {
+    font-size: 12px;
+    color: burlywood;
+}
+
+.blog-price > strong {
+    float: right;
+}
+
+.blog-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7); /* rgb, 투명도 */
+    padding: 10px;
+    opacity: 0; /* 화면에서 안보이게 */
+}
+
+.blog-hover > a {
+    color: #fff;
+    font-weight: 900;
+}
+
+/* inner에 마우스 닿으면 hover에 디자인 */
+.blog-inner:hover > .blog-hover {
+    opacity: 1;
+}
+
+
+/* 블로그 스타일을 5칸으로 변경 */
+@media(min-width: 1200px) {
+    .blog-style .col-lg-2 {
+    width: 20%;
+    }
+}
+
+/* ===== 상품콘텐츠 ===== */
+.item-content {
+    padding: 8px;
+    overflow: hidden;
+}
+
+.item {
+    margin-bottom: 4px;
+}
+
+.item span {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.right {
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+}
+
+.item-hover {
+    opacity: 0;
+    overflow: hidden;
+    margin-top: -40px;
+    transition: opacity 2s;
+    transition: all 1s ease-in-out;
+}
+
+.item-hover > li {
+    float: left;
+}
+
+.item-hover > li >img {
+    width: 50px;
+}
+
+.item-inner:hover .item-hover {
+    opacity: 1;
+    
+}
+
+

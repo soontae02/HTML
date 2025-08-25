@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        #header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background-image: url(images/bg.png);
+            z-index: 5;
+        }
+
+        .logo {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .logo > img {
+            width: 300px;
+        }
+
+        .gnb {
+            background-color: black;
+            text-align: center;
+        }
+
+        .gnb > ul > li {
+            display: inline-block;
+        }
+
+        .gnb > ul > li > a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .gnb > ul > li > a:hover {
+            background-color: gray;
+        }
+
+        .item {
+            background-color: #fff;
+            text-align: center;
+            position: sticky;
+            top: 140px;
+            z-index: 4;
+            padding: 10px 0;
+            border-top: 2px solid #ddd;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .item div {
+            display: inline-block;
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #section {
+            height: 2000px;
+            background-image: url(images/bg.png);
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .main {
+            position: relative;
+            display: inline-block;
+            margin-top: 50px;
+        }
+
+        .ipad {
+            width: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .s1, .s2, .s3, .s4 {
+            position: absolute;
+            width: 150px;
+        }
+
+        .s1 { left: -160px; top: -50px; }
+        .s2 { left: -160px; top: 80px; }
+        .s3 { right: -160px; top: -50px; }
+        .s4 { right: -160px; top: 80px; }
+
+        .action-btn {
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            z-index: 10;
+            background-color: red;
+            padding: 5px 10px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="action-btn">TOP</div>
+
+    <header id="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="로고">
+        </div>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="item">
+        <div>
+            <img src="images/item01.png" alt="아이폰">
+            <p>iphone</p>
+        </div>
+        <div>
+            <img src="images/item02.png" alt="ipod">
+            <p>ipod</p>
+        </div>
+        <div>
+            <img src="images/item03.png" alt="ipad">
+            <p>ipad</p>
+        </div>
+        <div>
+            <img src="images/item04.png" alt="iMac">
+            <p>iMac</p>
+        </div>
+    </div>
+        
+    <section id="section">
+        <div class="main">
+            <img class="ipad" src="images/ipad.jpg" alt="ipad">
+            <img class="s1" src="images/side01.png" alt="side1">
+            <img class="s2" src="images/side02.png" alt="side2">
+            <img class="s3" src="images/side03.png" alt="side3">
+            <img class="s4" src="images/side04.png" alt="side4">
+        </div>        
+    </section>    
+</body>
+</html>
